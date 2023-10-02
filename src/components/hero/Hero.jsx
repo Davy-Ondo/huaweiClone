@@ -1,13 +1,13 @@
 import React from 'react';
 import './hero.css';
 import { motion } from 'framer-motion';
-import { slideIn } from '../motion';
-import { staggerContainer } from '../motion';
-import kv_pc from './assets/kv_pc.jpg'
-import banner from './assets/banner.gif';
+import { slideIn } from '../beauty/motion';
+import { staggerContainer } from '../beauty/motion';
+import kv_pc from '../assets/kv_pc.jpg'
+import banner from '../assets/banner.gif';
 
 const Hero = () => (
-  <section className="hero">
+  <div className="hero">
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -22,7 +22,7 @@ const Hero = () => (
               </div>
         </motion.div>
     </motion.div>
-  </section>  
+  </div>  
 );
 
 export default Hero

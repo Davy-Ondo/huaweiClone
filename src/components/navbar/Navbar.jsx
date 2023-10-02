@@ -1,18 +1,18 @@
 import React from "react";
 import './navbar.css';
 import { motion } from "framer-motion";
-import { staggerContainer, fadeIn } from "../motion";
+import { staggerContainer, fadeIn } from "../beauty/motion";
 
-import logo from './assets/logo.png';
-import seed_logo from './assets/seeds_logo.png';
-import facebook from './assets/facebook.png';
-import linkedin from './assets/linkedin.png';
-import youtube from './assets/youtube.png';
-import twitter from './assets/twitter.png';
-import mail from './assets/mail.png';
+import logo from '../assets/logo.png';
+import seed_logo from '../assets/seeds_logo.png';
+import facebook from '../assets/facebook.png';
+import linkedin from '../assets/linkedin.png';
+import youtube from '../assets/youtube.png';
+import twitter from '../assets/twitter.png';
+import mail from '../assets/mail.png';
 
 const Navbar = () => (
-    <div className="master1">
+    <div className="navbar__container">
      <motion.nav
      className="navbar"
       variants={staggerContainer}
@@ -24,11 +24,9 @@ const Navbar = () => (
         className="navbar__section">
           <div className="huawei">
            <img src={logo} alt="huawei"/>
-          </div>
-          <div className="seed">
            <img src={seed_logo} alt="seed"/>
           </div>
-          <div className="link">
+          <div className="links">
             <a href="#home">HOME</a>
             <a href="#tech">TECH4GOOD</a>
             <a href="#community">COMMUNITY</a>
