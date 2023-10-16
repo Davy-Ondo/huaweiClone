@@ -259,6 +259,8 @@
     
     
 }
+
+
 @media screen and (max-width: 550px) {
 
     .about__container {
@@ -330,6 +332,79 @@
     
     
 }
+@media screen and (max-width: 415px) {
+
+    .about__container {
+        padding: 2.5rem 0rem;
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+    .about__container-image img {
+        min-width: 270px;
+        min-height:180px;
+        cursor: pointer;
+    }
+    
+    .about__container-text {
+        min-width: 250px;
+        min-height:200px;
+        margin-left: 1rem;
+    }
+    .about__container-text h2 {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0.01rem;
+    }
+
+    .about__container-image {
+        display: flex;
+        align-items: center;
+        margin-bottom: 3.5rem;
+        margin-right: 0px;
+    }
+    
+    .fitin {
+        position: absolute;
+        background-color: white;
+        width: 270px;
+        height:180px;
+        z-index: -1;
+        border-radius: 12px;
+        border: none;
+        box-shadow: rgba(206, 238, 238, 0.987) -1px 1px 5px 5px;
+        transform: rotate(-15deg);
+        filter: blur(1px);
+        transition: 500ms;
+    }
+
+    .about__container :hover {
+        .fitin {
+            position: absolute;
+            background-color: white;
+            width: 270px;
+            height:180px;
+            z-index: -1;
+            border-radius: 12px;
+            border: none;
+            box-shadow: rgba(181, 233, 232, 0.987) -1px 1px 5px 5px;
+            transform: rotate(0deg);
+            filter: blur(4px);
+        }
+    }
+
+    
+    
+}
+
+
 @media screen and (max-width: 350px) {
 
     .about__container {
@@ -343,15 +418,19 @@
         overflow: hidden;
     }
     
+    .about__container-image {
+        width: auto;
+        height: auto;
+        padding-left: 0;
+    }
     .about__container-image img {
-        min-width: 200px;
-        min-height:150px;
+        min-width: 150px;
+        min-height:200px;
         cursor: pointer;
     }
-    
     .about__container-text {
-        min-width: 200px;
-        min-height:200px;
+        max-width: 170px;
+        max-height:200px;
         margin-left: 0px;
     }
     .about__container-text h2 {

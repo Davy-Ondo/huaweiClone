@@ -14,6 +14,12 @@ import Card from '../card/Card';
 import { staggerContainer } from '../beauty/motion';
 import { cardexplo } from '../cardexplo/cardexplo';
 import { TypingText } from '../beauty/TypingText';
+import facebook from '../assets/facebook.png';
+import linkedin from '../assets/linkedin.png';
+import youtube from '../assets/youtube.png';
+import twitter from '../assets/twitter.png';
+import mail from '../assets/mail.png';
+
 
 const Main = () => {
   return (
@@ -91,6 +97,17 @@ const Main = () => {
               ))}
             </div>
            </motion.div>
+           <div className="footer">
+            <p>Copyright © 2023 Huawei Technology Co., Ltd.</p>
+            <p>All rights reserved.</p>
+            <div className="icons">
+              <img src={youtube} alt="youtube" />
+              <img src={linkedin} alt="linkedin" />
+              <img src={twitter} alt="twitter" />
+              <img src={facebook} alt="facebook" />
+              <img src={mail} alt="mail" />
+            </div>
+           </div>
       </div>
     </div>
   )
